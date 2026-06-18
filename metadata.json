@@ -1,0 +1,6 @@
+{
+  "name": "AI Poker HUD",
+  "description": "A high-tech Head-Up Display (HUD) dashboard for poker hand analysis, bot logs, and AI-driven game strategy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

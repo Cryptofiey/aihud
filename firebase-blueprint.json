@@ -1,0 +1,44 @@
+{
+  "collections": {
+    "users": {
+      "description": "User profiles and stats",
+      "documents": {
+        "{userId}": {
+          "fields": {
+            "displayName": { "type": "string" },
+            "email": { "type": "string" },
+            "vpip": { "type": "number" },
+            "pfr": { "type": "number" },
+            "handCount": { "type": "number" }
+          }
+        }
+      }
+    },
+    "logs": {
+      "description": "Bot activity logs per user",
+      "documents": {
+        "{logId}": {
+          "fields": {
+            "userId": { "type": "string" },
+            "timestamp": { "type": "timestamp" },
+            "message": { "type": "string" },
+            "type": { "type": "string" }
+          }
+        }
+      }
+    },
+    "sessions": {
+      "description": "Poker sessions",
+      "documents": {
+        "{sessionId}": {
+          "fields": {
+            "userId": { "type": "string" },
+            "startTime": { "type": "timestamp" },
+            "endTime": { "type": "timestamp" },
+            "profit": { "type": "number" }
+          }
+        }
+      }
+    }
+  }
+}
